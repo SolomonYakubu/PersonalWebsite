@@ -22,17 +22,13 @@ function Navbar(props) {
 					left: "15px",
 					zIndex: "4",
 					width: "100px",
-					// borderStyle: "solid",
-					// borderColor: "#fff",
-					// borderWidth: "2px",
+
 					height: "20px",
-					display: "flex",
+					display: "block",
 					justifyContent: "center",
 					alignItems: "center",
-					// borderTopLeftRadius: "25px",
-					// borderBottomRightRadius: "25px",
+
 					padding: "5px",
-					// borderRadius: "5px",
 				}}
 			>
 				<p style={{}} className="name">
