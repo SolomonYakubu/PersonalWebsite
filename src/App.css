@@ -11,6 +11,10 @@
 		url("./poppings/poppins-v12-latin-regular.ttf") format("truetype"),
 		url("./poppings/poppins-v12-latin-regular.svg#Poppings") format("svg");
 }
+.alert {
+	font-family: Poppins;
+	font-size: 24px;
+}
 .progressFont {
 	font-family: Poppins;
 	font-size: 14px;
@@ -136,6 +140,26 @@
 	font-family: Poppins;
 	margin-bottom: 7px;
 	margin-left: -10px;
+}
+@keyframes sending {
+	0% {
+		opacity: 0.4;
+	}
+	25% {
+		opacity: 0.7;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+.btnSubmit.sending {
+	animation: sending 1.5s infinite;
 }
 .btnSubmit {
 	background-color: #fff;

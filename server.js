@@ -5,12 +5,12 @@ const cors = require("cors");
 const creds = require("./config");
 var transport = {
 	service: "gmail",
-	host: "smtp.gmail.com",
-	port: 465,
-	secure: false,
 	auth: {
 		user: creds.USER,
 		pass: creds.PASS,
+	},
+	tls: {
+		rejectUnauthorized: false,
 	},
 };
 var transporter = nodemailer.createTransport(transport);
@@ -25,7 +25,7 @@ router.post("/send", (req, res, next) => {
 	var name = req.body.name;
 	var email = req.body.email;
 	var message = req.body.message;
-	var content = `name:${name}\nemail:${email}\nmessage:${message}`;
+	var content = `${name}\n\n${email}\n\n${message}`;
 
 	var mail = {
 		from: name,

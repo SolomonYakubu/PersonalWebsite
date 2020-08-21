@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import swal from "sweetalert";
 import "../App.css";
 
 const Contact = () => {
@@ -7,9 +8,10 @@ const Contact = () => {
 		email: "",
 		message: "",
 	});
-
+	const [sending, setSending] = useState(false);
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		setSending(true);
 		fetch("http://localhost:3002/send", {
 			method: "POST",
 			body: JSON.stringify(state),
@@ -20,10 +22,21 @@ const Contact = () => {
 		}).then((response) =>
 			response.json().then((response) => {
 				if (response.status === "success") {
-					alert("Message Sent.");
+					swal({
+						text: "Message not sent!!",
+						icon: "error",
+						className: "alert",
+					});
 					resetForm();
+					setSending(false);
 				} else if (response.status === "fail") {
-					alert("message not sent.");
+					swal({
+						text: "Message not sent!!",
+						icon: "error",
+						className: "alert",
+						dangerMode: true,
+					});
+					setSending(false);
 				}
 			}),
 		);
@@ -115,8 +128,11 @@ const Contact = () => {
 					/>
 				</div>
 				<div className="formItem">
-					<button type="submit" className="btnSubmit">
-						Send Email
+					<button
+						type="submit"
+						className={sending ? "btnSubmit sending" : "btnSubmit"}
+					>
+						{sending ? "Sending...." : "Send Email"}
 					</button>
 				</div>
 			</form>
