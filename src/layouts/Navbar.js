@@ -20,7 +20,7 @@ function Navbar(props) {
 					alignContent: "flex-start",
 					position: "absolute",
 					left: "15px",
-					//zIndex: "4",
+					zIndex: "4",
 					width: "100px",
 					// borderStyle: "solid",
 					// borderColor: "#fff",

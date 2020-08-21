@@ -284,29 +284,36 @@ function Content(props) {
 							<a
 								href="tel:+2348108405421"
 								style={{ textDecoration: "none" }}
-								className="conStyle"
+								className="conStyle set"
 							>
 								<FontAwesomeIcon
 									icon={faPhone}
 									className="socialIcon b"
 									size="lg"
+									style={{ marginRight: "10px" }}
 								/>
-								&nbsp; +234 8108405421
+								<div style={{ alignSelf: "center" }}>+234 8108405421</div>
 							</a>
 						</div>
 
 						<div style={{ margin: "5px" }}>
 							<a
 								href="mailto:soloyaks.sy@gmail.com"
-								style={{ textDecoration: "none" }}
-								className="conStyle"
+								style={{
+									textDecoration: "none",
+									// display: "flex",
+									// // justifyContent: "space-around",
+									// alignItems: "center",
+								}}
+								className="conStyle set"
 							>
 								<FontAwesomeIcon
 									icon={faEnvelope}
 									className="socialIcon b"
 									size="lg"
+									style={{ marginRight: "10px" }}
 								/>
-								&nbsp; soloyaks.sy@gmail.com
+								<div style={{ alignSelf: "center" }}>soloyaks.sy@gmail.com</div>
 							</a>
 						</div>
 						<div style={{ margin: "5px" }}>
