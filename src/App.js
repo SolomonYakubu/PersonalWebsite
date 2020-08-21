@@ -21,9 +21,8 @@ function App() {
 	}
 	return (
 		<div className="App">
+			<Navbar displayNav={displayNav} nav={nav} scrollers={scrollers} />
 			<div className="bigContainer">
-				<Navbar displayNav={displayNav} nav={nav} scrollers={scrollers} />
-
 				<Content
 					nav={nav}
 					scroll={scroll}
