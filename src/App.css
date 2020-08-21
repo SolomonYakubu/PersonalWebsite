@@ -11,9 +11,13 @@
 		url("./poppings/poppins-v12-latin-regular.ttf") format("truetype"),
 		url("./poppings/poppins-v12-latin-regular.svg#Poppings") format("svg");
 }
-.alert {
+.swal-text {
 	font-family: Poppins;
-	font-size: 24px;
+	font-size: 18px;
+}
+.swal-button {
+	border-radius: 5px;
+	background-color: #1464f4;
 }
 .progressFont {
 	font-family: Poppins;
@@ -170,6 +174,7 @@
 	height: 30px;
 	text-align: center;
 	border-width: 1.5px;
+	outline: none;
 	/* border-radius: 20px; */
 	align-self: start;
 

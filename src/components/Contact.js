@@ -25,7 +25,6 @@ const Contact = () => {
 					swal({
 						text: "Message sent!!",
 						icon: "success",
-						className: "alert",
 					});
 					resetForm();
 					setSending(false);
@@ -33,7 +32,7 @@ const Contact = () => {
 					swal({
 						text: "Message not sent!!",
 						icon: "error",
-						className: "alert",
+
 						dangerMode: true,
 					});
 					setSending(false);
