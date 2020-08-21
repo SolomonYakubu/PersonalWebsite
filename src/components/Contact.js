@@ -23,8 +23,8 @@ const Contact = () => {
 			response.json().then((response) => {
 				if (response.status === "success") {
 					swal({
-						text: "Message not sent!!",
-						icon: "error",
+						text: "Message sent!!",
+						icon: "success",
 						className: "alert",
 					});
 					resetForm();
