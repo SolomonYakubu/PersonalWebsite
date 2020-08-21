@@ -60,8 +60,8 @@
 
 	border: none;
 	z-index: 2;
-	/* opacity: 95%;
-	-moz-opacity: 95%; */
+	opacity: 0.95;
+	-moz-opacity: 0.95;
 }
 .icon {
 	z-index: 2;
@@ -372,7 +372,7 @@
 		margin: 0;
 
 		position: fixed;
-		opacity: 97%;
+		opacity: 0.97;
 		right: 0px;
 		top: 50px;
 		z-index: 1;
