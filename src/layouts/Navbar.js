@@ -24,7 +24,7 @@ function Navbar(props) {
 					width: "100px",
 
 					height: "20px",
-					display: "block",
+					display: "flex",
 					justifyContent: "center",
 					alignItems: "center",
 
