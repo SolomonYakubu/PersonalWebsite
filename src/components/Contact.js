@@ -12,7 +12,7 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setSending(true);
-		fetch("http://localhost:3002/send", {
+		fetch("http://kingsolocontactform.herokuapp.com/send", {
 			method: "POST",
 			body: JSON.stringify(state),
 			headers: {
