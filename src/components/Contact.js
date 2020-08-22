@@ -12,6 +12,7 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setSending(true);
+
 		fetch("https://kingsolocontactform.herokuapp.com/send", {
 			method: "POST",
 			body: JSON.stringify(state),
@@ -27,6 +28,7 @@ const Contact = () => {
 						icon: "success",
 					});
 					resetForm();
+
 					setSending(false);
 				} else if (response.status === "fail") {
 					swal({
@@ -96,6 +98,7 @@ const Contact = () => {
 						type="text"
 						className="formInput details"
 						placeholder="John Doe"
+						value={state.name}
 						onChange={(e) => onNameChange(e.target.value)}
 						required
 					/>
