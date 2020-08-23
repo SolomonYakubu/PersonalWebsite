@@ -81,15 +81,20 @@ const Contact = () => {
 					}}
 					className="aboutStyles"
 				>
-					Contact Me
+					Get In Touch
 				</div>
 			</div>
+
 			<form
 				id="contact-form"
 				onSubmit={handleSubmit.bind(this)}
 				method="POST"
 				className="form"
 			>
+				<div className="formItem contactText">
+					Do you have a project or an idea and would like to work with me? I'll
+					love to contribute and work with you. <p>Send me a message.</p>
+				</div>
 				<div className="formItem">
 					<label htmlFor="name" className="label">
 						Name
