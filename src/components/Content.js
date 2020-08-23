@@ -184,8 +184,8 @@ function Content(props) {
 						<img
 							src={require("../images/profile.jpg")}
 							style={{
-								width: "120px",
-								height: "120px",
+								width: "150px",
+								height: "150px",
 								borderRadius: "50%",
 								borderStyle: "solid",
 								borderColor: "#000",
