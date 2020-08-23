@@ -93,7 +93,7 @@ const Contact = () => {
 			>
 				<div className="formItem contactText">
 					Do you have a project or an idea and would like to work with me? I'll
-					love to contribute and work with you. <p>Send me a message.</p>
+					be glad to contribute and work with you. <p>Send me a message.</p>
 				</div>
 				<div className="formItem">
 					<label htmlFor="name" className="label">
