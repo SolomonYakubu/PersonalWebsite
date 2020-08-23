@@ -208,7 +208,7 @@
 .formItem.contactText {
 	text-align: left;
 	align-items: flex-start;
-	width: 97%;
+	width: 98%;
 	font-size: 16px;
 	font-family: Poppins;
 	margin-bottom: -20px;
@@ -540,5 +540,8 @@
 	}
 	.icon {
 		color: #1464f4;
+	}
+	.formItem.contactText {
+		width: 100%;
 	}
 }
