@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {
 	faBars,
 	faTimes,
@@ -14,6 +15,14 @@ import "../App.css";
 function Navbar(props) {
 	return (
 		<div className="header">
+			<Helmet>
+				<meta charset="utf-8" />
+				<title>KingSolo</title>
+				<meta name="keywords" content="Solomon, Yakubu, Kingsolo," />
+				<meta name="author" content="Yakubu Solomon" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="description" content="My personal portfolio Website" />
+			</Helmet>
 			<div
 				style={{
 					alignSelf: "center",

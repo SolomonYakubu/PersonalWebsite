@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
+import { Helmet } from "react-helmet";
 import "../App.css";
 
 const Contact = () => {
@@ -72,6 +73,14 @@ const Contact = () => {
 
 	return (
 		<React.Fragment>
+			<Helmet>
+				<meta charset="utf-8" />
+				<title>KingSolo</title>
+				<meta name="keywords" content="Solomon, Yakubu, Kingsolo," />
+				<meta name="author" content="Yakubu Solomon" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="description" content="My personal portfolio Website" />
+			</Helmet>
 			<div style={{}} className="aboutP">
 				<div
 					style={{

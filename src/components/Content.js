@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Helmet } from "react-helmet";
 import "../App.css";
 import Options from "./Options";
 import Contact from "./Contact";
@@ -56,9 +56,17 @@ const Skills = () => {
 		{ skill: "C++ & Java", id: 7, rate: 75 },
 	];
 
-	const progColor = "#6d9bf1";
+	const progColor = "#6d9bf1 ";
 	return (
 		<div>
+			<Helmet>
+				<meta charset="utf-8" />
+				<title>KingSolo</title>
+				<meta name="keywords" content="Solomon, Yakubu, Kingsolo," />
+				<meta name="author" content="Yakubu Solomon" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="description" content="My personal portfolio Website" />
+			</Helmet>
 			<div style={{}} className="aboutP">
 				<div
 					style={{
