@@ -1,5 +1,5 @@
 import React from "react";
-
+// import { helmet } from "react-helmet";
 import "../App.css";
 
 const Options = (props) => {
@@ -60,8 +60,5 @@ const Options = (props) => {
 		</div>
 	);
 };
-const buttonStyles = {
-	borderWidth: "4px",
-	borderColor: "#1464f4",
-};
+
 export default Options;
