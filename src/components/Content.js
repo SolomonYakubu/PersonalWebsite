@@ -56,7 +56,7 @@ const Skills = () => {
 		{ skill: "C++ & Java", id: 7, rate: 75 },
 	];
 
-	const progColor = "#6d9bf1 ";
+	const progColor = "#6d9bf1";
 	return (
 		<div>
 			<div style={{}} className="aboutP">

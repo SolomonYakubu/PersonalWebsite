@@ -17,7 +17,7 @@
 }
 .swal-button {
 	border-radius: 5px;
-	background-color: #1464f4;
+	background-color: #0080ff;
 }
 .progressFont {
 	font-family: Poppins;
@@ -40,7 +40,7 @@
 	text-decoration: none;
 	color: #fff;
 	font-family: Poppins;
-	background-color: #1464f4;
+	background-color: #0080ff;
 	border: none;
 	outline: none;
 }
@@ -64,7 +64,7 @@
 	height: 60px;
 	justify-content: flex-end;
 
-	background-color: #1464f4;
+	background-color: #0080ff;
 
 	border: none;
 	z-index: 2;
@@ -95,7 +95,7 @@
 	text-align: center;
 }
 .aboutStyles {
-	border-color: #1464f4;
+	border-color: #0080ff;
 	border-width: 6px;
 
 	font-family: Poppins;
@@ -168,8 +168,8 @@
 .btnSubmit {
 	background-color: #fff;
 	border-style: solid;
-	border-color: #1464f4;
-	color: #1464f4;
+	border-color: #0080ff;
+	color: #0080ff;
 	width: 120px;
 	height: 30px;
 	text-align: center;
@@ -209,7 +209,8 @@
 	text-align: left;
 	align-items: flex-start;
 	width: 98%;
-	font-size: 16px;
+	font-size: 18px;
+	color: #2f2f2f;
 	font-family: Poppins;
 	margin-bottom: -20px;
 }
@@ -404,7 +405,7 @@
 		justify-content: flex-start;
 		align-items: center;
 		align-self: flex-end;
-		width: 60%;
+		width: 70%;
 		/* box-shadow: -5px 5px 20px -5px #696969; */
 		padding-top: 5px;
 		padding-bottom: -100px;
@@ -427,7 +428,7 @@
 
 	.optLink {
 		text-decoration: none;
-		font-size: 15px;
+		font-size: 18px;
 		color: #000033;
 		font-family: Poppins;
 		font-weight: bold;
@@ -450,7 +451,7 @@
 		align-items: flex-start;
 	}
 	.header {
-		height: 40px;
+		height: 45px;
 		padding: 5px;
 	}
 	.container {
@@ -458,7 +459,7 @@
 		padding-bottom: 100px;
 
 		height: auto;
-		background-color: #f1f1f1;
+		background-color: #f9f9f9;
 
 		display: flex;
 		flex-direction: column;
@@ -539,7 +540,7 @@
 		color: #000;
 	}
 	.icon {
-		color: #1464f4;
+		color: #0080ff;
 	}
 	.formItem.contactText {
 		width: 100%;

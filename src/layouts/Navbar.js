@@ -75,7 +75,7 @@ function Navbar(props) {
 						position: "absolute",
 						right: "20px",
 						alignSelf: "center",
-						backgroundColor: "#1464f4",
+						backgroundColor: "#0080ff",
 						borderColor: "#fff",
 						borderStyle: "solid",
 						outline: "none",

@@ -1,11 +1,4 @@
 import React from "react";
-import {
-	faHome,
-	faLightbulb,
-	faListAlt,
-	faPhoneSquare,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "../App.css";
 
@@ -20,16 +13,12 @@ const Options = (props) => {
 					style={{
 						borderBottomStyle:
 							props.aboutShow || props.homeShow ? "solid" : null,
-						borderWidth: "3px",
+						borderWidth: "4px",
 						borderColor: "#1464f4",
+						padding: 0,
 					}}
 				>
-					<FontAwesomeIcon
-						icon={faHome}
-						style={{ float: "left" }}
-						className="icon"
-					/>
-					&nbsp;HOME
+					HOME
 				</button>
 
 				<button
@@ -38,16 +27,12 @@ const Options = (props) => {
 					onClick={(e) => props.scrollers(e.target.value)}
 					style={{
 						borderBottomStyle: props.skillShow ? "solid" : null,
-						borderWidth: "3px",
+						borderWidth: "4px",
 						borderColor: "#1464f4",
+						padding: 0,
 					}}
 				>
-					<FontAwesomeIcon
-						icon={faLightbulb}
-						style={{ float: "left" }}
-						className="icon"
-					/>{" "}
-					&nbsp;SKILLS
+					SKILLS
 				</button>
 
 				<button
@@ -55,12 +40,7 @@ const Options = (props) => {
 					onClick={(e) => props.scrollers(e.target.value)}
 					className="optLink"
 				>
-					<FontAwesomeIcon
-						icon={faListAlt}
-						style={{ float: "left" }}
-						className="icon"
-					/>
-					&nbsp;PROJECTS
+					PROJECTS
 				</button>
 
 				<button
@@ -69,20 +49,19 @@ const Options = (props) => {
 					className="optLink"
 					style={{
 						borderBottomStyle: props.contactShow ? "solid" : null,
-						borderWidth: "3px",
+						borderWidth: "4px",
 						borderColor: "#1464f4",
+						padding: 0,
 					}}
 				>
-					<FontAwesomeIcon
-						icon={faPhoneSquare}
-						className="icon"
-						style={{ float: "left" }}
-					/>
-					&nbsp;CONTACT
+					CONTACT
 				</button>
 			</div>
 		</div>
 	);
 };
-
+const buttonStyles = {
+	borderWidth: "4px",
+	borderColor: "#1464f4",
+};
 export default Options;
