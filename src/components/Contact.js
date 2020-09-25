@@ -21,37 +21,36 @@ const Contact = () => {
 
 				dangerMode: true,
 			});
-		}, 45000);
-		if (sending) {
-			fetch("https://kingsolocontactform.herokuapp.com/send", {
-				method: "POST",
-				body: JSON.stringify(state),
-				headers: {
-					Accept: "application.json",
-					"Content-Type": "application/json",
-				},
-			}).then((response) =>
-				response.json().then((response) => {
-					if (response.status === "success") {
-						swal({
-							text: "Message sent!!",
-							icon: "success",
-						});
-						resetForm();
+		}, 60000);
 
-						setSending(false);
-					} else if (response.status === "fail") {
-						swal({
-							text: "Message not sent!!",
-							icon: "error",
+		fetch("https://kingsolocontactform.herokuapp.com/send", {
+			method: "POST",
+			body: JSON.stringify(state),
+			headers: {
+				Accept: "application.json",
+				"Content-Type": "application/json",
+			},
+		}).then((response) =>
+			response.json().then((response) => {
+				if (response.status === "success") {
+					swal({
+						text: "Message sent!!",
+						icon: "success",
+					});
+					resetForm();
 
-							dangerMode: true,
-						});
-						setSending(false);
-					}
-				}),
-			);
-		}
+					setSending(false);
+				} else if (response.status === "fail") {
+					swal({
+						text: "Message not sent!!",
+						icon: "error",
+
+						dangerMode: true,
+					});
+					setSending(false);
+				}
+			}),
+		);
 	};
 	const resetForm = () => {
 		setState({ name: "", email: "", message: "" });
