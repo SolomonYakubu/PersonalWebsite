@@ -95,7 +95,7 @@
 	text-align: center;
 }
 .aboutStyles {
-	border-color: #0080ff;
+	border-color: #2a52be;
 	border-width: 6px;
 
 	font-family: Poppins;
@@ -166,21 +166,22 @@
 	animation: sending 1.5s infinite;
 }
 .btnSubmit {
-	background-color: #fff;
-	border-style: solid;
-	border-color: #0080ff;
-	color: #0080ff;
+	background-color: #0080ff;
+	/* border-style: solid; */
+	/* border-color: #0080ff; */
+	color: #fff;
 	width: 120px;
 	height: 30px;
 	text-align: center;
-	border-width: 1.5px;
+	/* border-width: 1.5px; */
 	outline: none;
 	/* border-radius: 20px; */
 	align-self: start;
-
+	border: none;
 	font-family: Poppins;
+	border-radius: 5px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 300;
 	padding: auto;
 	margin-left: -10px;
 }
