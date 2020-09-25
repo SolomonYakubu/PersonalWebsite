@@ -13,35 +13,45 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setSending(true);
+		setTimeout(() => {
+			setSending(false);
+			swal({
+				text: "Network error",
+				icon: "error",
 
-		fetch("https://kingsolocontactform.herokuapp.com/send", {
-			method: "POST",
-			body: JSON.stringify(state),
-			headers: {
-				Accept: "application.json",
-				"Content-Type": "application/json",
-			},
-		}).then((response) =>
-			response.json().then((response) => {
-				if (response.status === "success") {
-					swal({
-						text: "Message sent!!",
-						icon: "success",
-					});
-					resetForm();
+				dangerMode: true,
+			});
+		}, 45000);
+		if (sending) {
+			fetch("https://kingsolocontactform.herokuapp.com/send", {
+				method: "POST",
+				body: JSON.stringify(state),
+				headers: {
+					Accept: "application.json",
+					"Content-Type": "application/json",
+				},
+			}).then((response) =>
+				response.json().then((response) => {
+					if (response.status === "success") {
+						swal({
+							text: "Message sent!!",
+							icon: "success",
+						});
+						resetForm();
 
-					setSending(false);
-				} else if (response.status === "fail") {
-					swal({
-						text: "Message not sent!!",
-						icon: "error",
+						setSending(false);
+					} else if (response.status === "fail") {
+						swal({
+							text: "Message not sent!!",
+							icon: "error",
 
-						dangerMode: true,
-					});
-					setSending(false);
-				}
-			}),
-		);
+							dangerMode: true,
+						});
+						setSending(false);
+					}
+				}),
+			);
+		}
 	};
 	const resetForm = () => {
 		setState({ name: "", email: "", message: "" });
